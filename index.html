@@ -1,88 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Teaser</title>
+    <meta charset="UTF-8">
+    <title>Ministerio de Salud Pública | Comunicado Oficial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
 
-<style>
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    overflow: hidden;
-}
+        header {
+            background-color: #111;
+            border-bottom: 1px solid #333;
+            padding: 20px;
+        }
 
-/* Centrado */
-.scene {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        header h1 {
+            margin: 0;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+        }
 
-/* Televisión */
-.tv {
-    width: 420px;
-    height: 320px;
-    background: #111;
-    border-radius: 20px;
-    box-shadow:
-        0 0 60px rgba(255,255,255,0.05),
-        inset 0 0 20px rgba(0,0,0,0.8);
-    position: relative;
-    padding: 20px;
-}
+        header p {
+            margin: 4px 0 0;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
 
-/* Pantalla */
-.screen {
-    width: 100%;
-    height: 100%;
-    background: #000;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
 
-/* Ruido base */
-.noise {
-    position: absolute;
-    inset: -100%;
-    background-image:
-        repeating-radial-gradient(circle,
-        rgba(255,255,255,0.12) 0px,
-        rgba(255,255,255,0.12) 1px,
-        rgba(0,0,0,0.12) 2px,
-        rgba(0,0,0,0.12) 3px);
-    animation: noiseMove 0.2s infinite linear;
-}
+        h2 {
+            font-size: 1.3rem;
+            border-left: 4px solid #555;
+            padding-left: 10px;
+            margin-top: 40px;
+        }
 
-/* Líneas horizontales */
-.scanlines {
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-        to bottom,
-        rgba(255,255,255,0.04) 0px,
-        rgba(255,255,255,0.04) 1px,
-        transparent 2px,
-        transparent 4px
-    );
-    mix-blend-mode: overlay;
-    pointer-events: none;
-}
+        p {
+            margin: 16px 0;
+        }
 
-/* Parpadeo */
-.flicker {
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.03);
-    animation: flicker 0.15s infinite;
-}
+        .alert {
+            background-color: #141414;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-top: 30px;
+        }
 
-/* Animaciones */
-@keyframes noiseMove {
-    0% { transform: translate(0,0); }
-    100% { transform: translate(50%,50%);
+        .alert strong {
+            color: #cfcfcf;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.8rem;
+            color: #888;
+            text-align: center;
+        }
+
+        .classified {
+            color: #777;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ministerio de Salud Pública</h1>
+    <p>Comunicado oficial — Uso informativo</p>
+</header>
+
+<main>
+    <h2>Estado actual de la situación</h2>
+
+    <p>
+        Durante las últimas semanas se ha detectado la propagación de una enfermedad conocida
+        públicamente como <strong>La Redención</strong>.
+    </p>
+
+    <p>
+        Los casos confirmados se extienden a múltiples regiones del mundo.
+        La naturaleza exacta del origen continúa bajo investigación.
+    </p>
+
+    <h2>Descripción general</h2>
+
+    <p>
+        La Redención provoca un estado progresivo de shock y confusión en la persona afectada.
+        Los síntomas iniciales pueden pasar desapercibidos.
+    </p>
+
+    <p>
+        En fases avanzadas, el individuo presenta desconexión emocional,
+        pérdida de noción temporal y episodios de conducta errática.
+    </p>
+
+    <div class="alert">
+        <p><strong>Advertencia:</strong></p>
+        <p>
+            No se recomienda el contacto prolongado con personas que muestren signos evidentes
+            de desorientación severa.
+        </p>
+    </div>
+
+    <h2>Respuesta gubernamental</h2>
+
+    <p>
+        El gobierno ha desplegado recursos sanitarios y equipos de investigación especializados.
+    </p>
+
+    <p>
+        Hasta la fecha, las medidas implementadas no han demostrado una contención efectiva.
+    </p>
+
+    <p class="classified">
+        Parte de la información relacionada con La Redención permanece clasificada
+        por motivos de seguridad pública.
+    </p>
+
+    <h2>Recomendaciones a la población</h2>
+
+    <p>
+        Mantener la calma.
+        Evitar la difusión de información no verificada.
+        Seguir exclusivamente los comunicados oficiales.
+    </p>
+
+    <p>
+        En caso de experimentar síntomas, se recomienda el aislamiento voluntario
+        y la notificación inmediata a las autoridades sanitarias.
+    </p>
+</main>
+
+<footer>
+    © Gobierno Central — Ministerio de Salud Pública  
+    <br>
+    Este comunicado puede ser actualizado sin previo aviso.
+</footer>
+
+</body>
+</html>
